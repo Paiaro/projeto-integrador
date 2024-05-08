@@ -30,8 +30,6 @@ nav h2 a:focus,
 .links-menu {
   list-style: none;
   display: none;
-  margin: 0;
-  padding: 0;
 }
 
 .links-menu a {
@@ -46,15 +44,19 @@ nav h2 a:focus,
 
 .links-menu.aberto {
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   position: absolute;
   left: 0;
   right: 0;
   background-color: var(#fafafa);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .links-menu.aberto li {
-  margin: 0 1rem;
+  margin: 0;
+  padding: 0;
+}
+.links-menu.aberto li:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 /* ----------------------------------------------------------------------- */
