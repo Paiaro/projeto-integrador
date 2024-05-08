@@ -3,63 +3,92 @@
 }
 
 /* estilização do menu */
-
 nav {
-  position:absolute;
-  top: 0;
+  position: relative;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
-  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
-nav h2 a {
-  color: var(#333);
-  font-size: 1.2rem;
-  padding: 1rem;
-  display: inline-block;
+nav ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-nav h2 a:hover,
-nav h2 a:focus,
-.links-menu a:hover,
-.links-menu a:focus {
-  background-color: var(#fafafa);
+nav ul li:last-child {
+  border-bottom: none;
 }
 
-.links-menu {
-  list-style: none;
-  display: none;
-}
-
-.links-menu a {
-  color: var(#333);
-  font-weight: bold;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
+nav ul li a {
+  color: #333;
   text-decoration: none;
+  display: block;
 }
 
-.links-menu.aberto {
-  display: flex;
-  flex-direction:column;
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
   position: absolute;
-  left: 0;
-  right: 0;
-  background-color: var(#fafafa);
-  padding: 0.5rem;
-  justify-content: center;
-}
-.links-menu.aberto li {
-  margin: 0;
-  padding: 0;
-}
-.links-menu.aberto li:not(:last-child) {
-  margin-bottom: 1rem;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#menu-btn:focus + .menu,
+.menu.aberto {
+  display: block;
+}
 /* ----------------------------------------------------------------------- */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
