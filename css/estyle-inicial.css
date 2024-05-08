@@ -34,7 +34,7 @@
 
   .links-menu.aberto {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     position: absolute;
     left: 0;
     right: 0;
