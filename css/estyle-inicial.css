@@ -50,6 +50,7 @@ nav h2 a:focus,
   right: 0;
   background-color: var(#fafafa);
   padding: 0.5rem;
+  justify-content: center;
 }
 .links-menu.aberto li {
   margin: 0;
