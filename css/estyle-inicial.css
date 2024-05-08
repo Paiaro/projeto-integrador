@@ -43,7 +43,7 @@ nav h2 a:focus,
 
 .links-menu.aberto {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   position: absolute;
   left: 0;
   right: 0;
