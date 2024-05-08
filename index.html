@@ -10,7 +10,7 @@
     * {
       box-sizing: border-box;
     }
-
+/* estilização do menu */
     nav h2 a {
       color: var(#333);
       font-size: 1.2rem;
@@ -25,20 +25,11 @@
       background-color: var(#fafafa);
     }
 
-    /* Estilos para a lista ul contida no nav */
     .links-menu {
       list-style: none;
-
-      /* Atenção: neste ponto, fazemos com que os links
-    do menu iniciem escondidos (display:none).
-    Posteriormente, com ajuda do CSS combinado com JS,
-    faremos os controles para exibir/esconder de forma
-    alternada. */
       display: none;
     }
 
-    /* Estilos para os links contidos
-na ul dentro do nav */
     .links-menu a {
       color: var(#333);
       font-weight: bold;
@@ -48,30 +39,16 @@ na ul dentro do nav */
       align-items: center;
     }
 
-    /* Regra que será aplicada somente
-quando o menu for acionado para abertura */
     .links-menu.aberto {
-      /* Ativando o flex fazemos
-    com que os links voltem a aparecer. */
       display: flex;
-
-      /* Fazemos com que eles fiquem
-    um em cima do outro (flex coluna) */
       flex-direction: column;
-
-      /* Ativamos position:absolute
-    e ajustamos a posição final dos links
-    usando propriedades de coordenadas. */
       position: absolute;
       left: 0;
       right: 0;
-
       background-color: var(#fafafa);
     }
 
-
-
-
+    /* ----------------------------------------------------------------------- */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
