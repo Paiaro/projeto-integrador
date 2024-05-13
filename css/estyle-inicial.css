@@ -156,6 +156,15 @@ header {
   color: #fff;
   border-radius: 8px;
 }
+/* --------------calcinhas------------------ */
+
+
+
+
+/* -------------------------------menu responsivo--------------------------- */
+
+
+
 
 @media screen and (max-width: 768px) {
   .container {
@@ -179,45 +188,5 @@ header {
 
   .links-menu li {
     width: 100%;
-  }
-}
-/* menu responsivo */
-@media (max-width: 768px) {
-  nav button {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  nav ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  nav ul li:last-child {
-    border-bottom: none;
-  }
-
-  nav ul li a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-  }
-
-  nav ul li a:hover {
-    background-color: #ddd;
-  }
-
-  .dropdown-menu {
-    position: relative;
   }
 }
