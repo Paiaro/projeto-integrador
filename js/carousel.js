@@ -3,6 +3,7 @@
 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-item');
+let slideInterval = setInterval(moveSlide, 3000, 1); // Auto-advance every 3 seconds
 
 function showSlide(index) {
     if (index >= slides.length) {
@@ -14,16 +15,18 @@ function showSlide(index) {
     }
     const newTransform = -100 * currentSlide;
     document.getElementById('carouselItems').style.transform = `translateX(${newTransform}%)`;
-    for (let slide of slides) {
-        slide.classList.remove('active');
-    }
-    slides[currentSlide].classList.add('active');
 }
 
 function moveSlide(direction) {
     showSlide(currentSlide + direction);
+    resetInterval();
+}
+
+function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(moveSlide, 3000, 1);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    showSlide(0); // Inicia o carrossel na primeira imagem
+    showSlide(0);
 });
