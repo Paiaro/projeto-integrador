@@ -235,3 +235,19 @@ header {
     width: 100%;
   }
 }
+/* carousel responsivo */
+@media (max-width: 768px) {
+  .carousel {
+      max-width: 100%; /* Ocupa 100% da largura em dispositivos menores */
+  }
+  .carousel-control {
+      font-size: 18px; /* Botões menores em dispositivos menores */
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-control {
+      display: none;
+  }
+}
