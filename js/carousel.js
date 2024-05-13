@@ -3,7 +3,7 @@
 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-item');
-let slideInterval = setInterval(moveSlide, 3000, 1); // Auto-advance every 3 seconds
+let slideInterval = setInterval(moveSlide, 2000, 1); 
 
 function showSlide(index) {
     if (index >= slides.length) {
@@ -24,7 +24,7 @@ function moveSlide(direction) {
 
 function resetInterval() {
     clearInterval(slideInterval);
-    slideInterval = setInterval(moveSlide, 3000, 1);
+    slideInterval = setInterval(moveSlide, 2000, 1);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
