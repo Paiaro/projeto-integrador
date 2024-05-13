@@ -30,7 +30,7 @@ function resetInterval() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(0);
 });
-// condição para dispositivos moveis
+// condição para dispositivos moveis (toque).
 let touchStartX = 0;
 let touchEndX = 0;
 
