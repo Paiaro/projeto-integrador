@@ -173,7 +173,7 @@ header {
 }
 
 .carousel-item {
-  width: 100%; /* Correção para 100%/3 */
+  width: 100%;
   flex-shrink: 0;
   display: block;
 }
