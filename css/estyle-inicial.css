@@ -1,3 +1,10 @@
+body {
+  background-image: url('../imagens/bg-luzesvermelhas.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* Estilos gerais para o carrossel */
 .carousel {
   position: relative;
