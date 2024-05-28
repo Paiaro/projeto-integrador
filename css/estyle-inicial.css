@@ -75,6 +75,7 @@ body {
   transform: scale(1.05);
 }
 
+
     /* Media query para telas grandes */
     @media (min-width: 1200px) {
       .carousel-item {
