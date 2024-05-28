@@ -6,6 +6,13 @@ body {
 }
 
 /* estilos do carousel  */
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-inner img {
+  height: 100vh;
+}
 
 /* Imagens principais */
 .imgs {
