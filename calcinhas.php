@@ -53,7 +53,39 @@
   </div>
    
     <!-- div -------------------------------final da container--------------------------- -->
-    
+
+
+    <!-- ----------------------------------- main ---------------------------- -->
+
+    <main>
+        <section class="banner">
+            <img src="imagens/leite.jpg" alt="Promoção">
+            <div class="banner-text">Nova Coleção</div>
+        </section>
+        
+        <section class="products">
+            <?php
+            include 'produtos.php';
+            foreach ($produtos as $produto) {
+                $nome = htmlspecialchars($produto['nome'], ENT_QUOTES, 'UTF-8');
+                $descricao = htmlspecialchars($produto['descricao'], ENT_QUOTES, 'UTF-8');
+                $preco = number_format($produto['preco'], 2, ',', '.');
+                $imagem = htmlspecialchars($produto['imagem'], ENT_QUOTES, 'UTF-8');
+
+                echo "<div class='product'>";
+                echo "<img src='imagens/{$imagem}' alt='{$nome}'>";
+                echo "<h2>{$nome}</h2>";
+                echo "<p>R$ {$preco}</p>";
+                echo "<button>Adicionar ao carrinho</button>";
+                echo "</div>";
+            }
+            ?>
+        </section>
+    </main>
+
+
+
+
 <!-- -----------------------------------------rodapé------------------------------------- -->
   <footer class="bg-light text-center text-lg-start mt-5">
     <div class="container p-4">
