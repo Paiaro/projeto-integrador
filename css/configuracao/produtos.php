@@ -1,5 +1,5 @@
 <?php
-include 'bancodados.php';
+include 'config.php';
 
 $sql = "SELECT * FROM produtos";
 $result = $conn->query($sql);
