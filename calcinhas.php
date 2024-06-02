@@ -51,63 +51,52 @@
       </div>
     </nav>
   </div>
-   
-    <!-- div -------------------------------final da container--------------------------- -->
 
+  <main>
+    <section class="banner">
+      <img src="imagens/calcinhas.png" alt="Promoção">
+      <div class="banner-text">Nova Coleção</div>
+    </section>
+    
+    <section class="products container mt-5">
+      <div class="row">
+        <?php
+        include 'produtos.php';
+        foreach ($produtos as $produto) {
+          $nome = htmlspecialchars($produto['nome'], ENT_QUOTES, 'UTF-8');
+          $descricao = htmlspecialchars($produto['descricao'], ENT_QUOTES, 'UTF-8');
+          $preco = number_format($produto['preco'], 2, ',', '.');
+          $imagem = htmlspecialchars($produto['imagem'], ENT_QUOTES, 'UTF-8');
 
-    <!-- ----------------------------------- main ---------------------------- -->
+          echo "<div class='product col-md-4 mb-4'>";
+          echo "<div class='card'>";
+          echo "<img src='imagens/{$imagem}' class='card-img-top' alt='{$nome}'>";
+          echo "<div class='card-body'>";
+          echo "<h5 class='card-title'>{$nome}</h5>";
+          echo "<p class='card-text'>R$ {$preco}</p>";
+          echo "<button class='btn btn-primary'>Adicionar ao carrinho</button>";
+          echo "</div>";
+          echo "</div>";
+          echo "</div>";
+        }
+        ?>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section class="banner">
-            <img src="imagens/leite.jpg" alt="Promoção">
-            <div class="banner-text">Nova Coleção</div>
-        </section>
-        
-        <section class="products">
-            <?php
-            include 'produtos.php';
-            foreach ($produtos as $produto) {
-                $nome = htmlspecialchars($produto['nome'], ENT_QUOTES, 'UTF-8');
-                $descricao = htmlspecialchars($produto['descricao'], ENT_QUOTES, 'UTF-8');
-                $preco = number_format($produto['preco'], 2, ',', '.');
-                $imagem = htmlspecialchars($produto['imagem'], ENT_QUOTES, 'UTF-8');
-
-                echo "<div class='product'>";
-                echo "<img src='imagens/{$imagem}' alt='{$nome}'>";
-                echo "<h2>{$nome}</h2>";
-                echo "<p>R$ {$preco}</p>";
-                echo "<button>Adicionar ao carrinho</button>";
-                echo "</div>";
-            }
-            ?>
-        </section>
-    </main>
-
-
-
-
-<!-- -----------------------------------------rodapé------------------------------------- -->
   <footer class="bg-light text-center text-lg-start mt-5">
     <div class="container p-4">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase">Mayara Lingerie</h5>
-          <p>
-            Endereço: Rua, 123, Bairro, Cidade.
-          </p>
-          <p>
-            Telefone: (83) 99151-4153
-          </p>
+          <p>Endereço: Rua, 123, Bairro, Cidade.</p>
+          <p>Telefone: (83) 99151-4153</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Navegação</h5>
           <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#" class="text-dark" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Voltar ao topo</a>
-            </li>
-            <li>
-              <a href="index.html" class="text-dark">Voltar ao início</a>
-            </li>
+            <li><a href="#" class="text-dark" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Voltar ao topo</a></li>
+            <li><a href="index.html" class="text-dark">Voltar ao início</a></li>
           </ul>
         </div>
       </div>
