@@ -4,7 +4,6 @@ require_once "include/cabecalho.php";
 
 
 <style>
-        /* Estilos CSS para a página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
