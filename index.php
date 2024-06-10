@@ -15,6 +15,14 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
+    .navbar-brand {
+      margin-right: 0;
+    }
+
+    .navbar-brand img {
+      width: 50px;
+      height: auto;
+    }
 
     /* Imagens principais */
     .imgs {
@@ -82,15 +90,8 @@
         max-height: 600px;
       }
     }
-  /* Estilo personalizado para a navbar */
-  .navbar-brand {
-      margin-right: 0;
-    }
-
-    .navbar-brand img {
-      width: 50px; /* Tamanho do logotipo */
-      height: auto;
-    }
+ 
+ 
   </style>
 </head>
 
