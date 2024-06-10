@@ -8,6 +8,81 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estyle-inicial.css">
+  <style>
+    body {
+      background-color: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Imagens principais */
+    .imgs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem 0;
+    }
+
+    .imgs figure {
+      margin: 0;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .imgs img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .imgs img:hover {
+      transform: scale(1.05);
+    }
+
+    .carousel-container {
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .carousel-item img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      max-height: 700px;
+    }
+
+    /* Responsividade */
+    @media (min-width: 1200px) {
+      .carousel-container {
+        max-width: 80%;
+      }
+    }
+
+    @media (max-width: 1199.98px) and (min-width: 992px) {
+      .carousel-container {
+        max-width: 90%;
+      }
+    }
+
+    @media (max-width: 991.98px) and (min-width: 768px) {
+      .carousel-container {
+        max-width: 100%;
+      }
+
+      .carousel-item img {
+        max-height: 900px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .carousel-item img {
+        max-height: 600px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -64,13 +139,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imagens/promo.gif" class="d-block w-100" alt="...">
+          <img src="imagens/promo.gif" class="d-block w-100" alt="Promoção">
         </div>
         <div class="carousel-item">
-          <img src="imagens/promocao-animada1.gif" class="d-block w-100" alt="...">
+          <img src="imagens/promocao-animada1.gif" class="d-block w-100" alt="Promoção Animada 1">
         </div>
         <div class="carousel-item">
-          <img src="imagens/promocao-animada2.gif" class="d-block w-100" alt="...">
+          <img src="imagens/promocao-animada2.gif" class="d-block w-100" alt="Promoção Animada 2">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -88,20 +163,19 @@
   <!---------------- Imagens Principais -------------------->
   <div class="imgs">
     <figure>
-      <a href=""><img src="imagens/calcinhas.png" alt=""></a>
+      <a href=""><img src="imagens/calcinhas.png" alt="Calcinhas"></a>
     </figure>
     <figure>
-      <a href=""><img src="imagens/sutias.png" alt=""></a>
+      <a href=""><img src="imagens/sutias.png" alt="Sutiãs"></a>
     </figure>
     <figure>
-      <a href=""><img src="imagens/conjunto.png" alt=""></a>
+      <a href=""><img src="imagens/conjunto.png" alt="Conjuntos"></a>
     </figure>
     <figure>
-      <a href=""><img src="imagens/pijamas.png" alt=""></a>
+      <a href=""><img src="imagens/pijamas.png" alt="Pijamas"></a>
     </figure>
   </div>
   <!-- div -------------------------------final da container--------------------------- -->
-  </div>
   <!-- -----------------------------------------rodapé------------------------------------- -->
   <footer class="bg-light text-center text-lg-start mt-5">
     <div class="container p-4">
