@@ -51,7 +51,8 @@
       </div>
     </nav>
   </div>
-    <!-----------------------Carousel--------------------------- -->
+  <!-----------------------Carousel--------------------------- -->
+  <div class="carousel-container">
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -63,7 +64,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imagens/promocao.png" class="d-block w-100" alt="...">
+          <img src="imagens/promo.gif" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <img src="imagens/promocao-animada1.gif" class="d-block w-100" alt="...">
@@ -83,24 +84,25 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!---------------- Imagens Principais -------------------->
-    <div class="imgs">
-      <figure>
-        <a href=""><img src="imagens/calcinhas.png" alt=""></a>
-      </figure>
-      <figure>
-        <a href=""><img src="imagens/sutias.png" alt=""></a>
-      </figure>
-      <figure>
-        <a href=""><img src="imagens/conjunto.png" alt=""></a>
-      </figure>
-      <figure>
-        <a href=""><img src="imagens/pijamas.png" alt=""></a>
-      </figure>
-    </div>
-    <!-- div -------------------------------final da container--------------------------- -->
   </div>
-<!-- -----------------------------------------rodapé------------------------------------- -->
+  <!---------------- Imagens Principais -------------------->
+  <div class="imgs">
+    <figure>
+      <a href=""><img src="imagens/calcinhas.png" alt=""></a>
+    </figure>
+    <figure>
+      <a href=""><img src="imagens/sutias.png" alt=""></a>
+    </figure>
+    <figure>
+      <a href=""><img src="imagens/conjunto.png" alt=""></a>
+    </figure>
+    <figure>
+      <a href=""><img src="imagens/pijamas.png" alt=""></a>
+    </figure>
+  </div>
+  <!-- div -------------------------------final da container--------------------------- -->
+  </div>
+  <!-- -----------------------------------------rodapé------------------------------------- -->
   <footer class="bg-light text-center text-lg-start mt-5">
     <div class="container p-4">
       <div class="row">
@@ -132,8 +134,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

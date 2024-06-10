@@ -33,22 +33,43 @@ body {
   transform: scale(1.05);
 }
 
-.carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  max-height: 500px; /* Ajuste a altura */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .carousel-item img {
-    max-height: 300px;
+  /* Adiciona esta seção de CSS */
+  .carousel-container {
+    margin: 0 auto; /* Centraliza o carrossel */
+    padding: 20px; /* Espaçamento nas bordas */
   }
-}
 
-@media (max-width: 576px) {
   .carousel-item img {
-    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Ajuste a altura máxima conforme necessário */
   }
-}
+
+  /* Responsividade */
+  @media (min-width: 1200px) {
+    .carousel-container {
+      max-width: 80%; /* Ajuste conforme necessário */
+    }
+  }
+
+  @media (max-width: 1199.98px) and (min-width: 992px) {
+    .carousel-container {
+      max-width: 90%; /* Ajuste conforme necessário */
+    }
+  }
+
+  @media (max-width: 991.98px) and (min-width: 768px) {
+    .carousel-container {
+      max-width: 100%; /* Ajuste conforme necessário */
+    }
+    .carousel-item img {
+      max-height: 300px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .carousel-item img {
+      max-height: 200px;
+    }
+  }
