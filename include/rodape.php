@@ -18,7 +18,7 @@
               <a href="#" class="text-dark" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Voltar ao topo</a>
             </li>
             <li>
-              <a href="index.html" class="text-dark">Voltar ao início</a>
+              <a href="../index.php" class="text-dark">Voltar ao início</a>
             </li>
           </ul>
         </div>
