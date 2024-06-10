@@ -33,16 +33,10 @@
                 <a class="nav-link" href="#">Sutiãs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sutiãs</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#">Conjuntos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pijamas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Outros</a>
               </li>
             </ul>
             <form class="d-flex mt-3" role="search">
