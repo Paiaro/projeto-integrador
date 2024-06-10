@@ -13,7 +13,7 @@
   <div class="container">
     <nav class="navbar bg-transparent fixed-top" style="background-color: transparent;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="imagens/logo-mayara.jpeg" alt="Logotipo da Mayara Lingerie"></a>
+        <a class="navbar-brand" href="../projeto-integrador/index.php"><img src="imagens/logo-mayara.jpeg" alt="Logotipo da Mayara Lingerie"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../calcinhas.php">Calcinhas</a>
+                <a class="nav-link active" aria-current="page" href="../projeto-integrador/index.php">Página principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../projeto-integrador/calcinhas.php">Calcinhas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sutiãs</a>
