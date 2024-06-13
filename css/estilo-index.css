@@ -4,14 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  .navbar-brand {
-    margin-right: 0;
-  }
-
-  .navbar-brand img {
-    width: 50px;
-    height: auto;
-  }
+  
 
   /* Imagens principais */
   .imgs {

@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-br" class="h-100">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mayara Lingerie</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/estilo-index.css">
-</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mayara Lingerie</title>
 
-<body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body class="d-flex flex-column h-100">
+    
+<header id="topo" class="border-bottom sticky-top">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <nav class="navbar bg-transparent fixed-top" style="background-color: transparent;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../projeto-integrador/index.php"><img src="imagens/logo-mayara.jpeg" alt="Logotipo da Mayara Lingerie"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Produtos</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../projeto-integrador/index.php">Página principal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../projeto-integrador/calcinhas.php">Calcinhas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sutiãs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Conjuntos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pijamas</a>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Procurar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <h1 class="ms-n1"><a class="navbar-brand" href="index.php">Mayara Lingerie</a></h1>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.php">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin/index.php"><i class="bi bi-lock-fill"></i> Área administrativa</a>
+        </li>
+      </ul>
+
+      <form autocomplete="off" class="d-flex" action="resultados.php" method="GET">
+        <input name="busca" class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Pesquise aqui">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">OK</button>
+      </form>
+    </div>
   </div>
+</nav>
+
+</header>
+
+<main class="flex-shrink-0">
+    <div class="container">
+
+    

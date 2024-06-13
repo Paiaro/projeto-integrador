@@ -1,7 +1,7 @@
 <?php
 require_once "include/cabecalho.php";
 ?>
-
+<link rel="stylesheet" href="css/estilo-index.css">
 <!-----------------------Carousel--------------------------- -->
 <div class="carousel-container">
   <div id="carouselExampleIndicators" class="carousel slide">
