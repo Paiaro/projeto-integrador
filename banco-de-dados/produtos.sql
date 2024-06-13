@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2024 at 08:41 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Tempo de geração: 13/06/2024 às 22:22
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,43 +18,43 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `loja_roupas`
+-- Banco de dados: `produtos`
 --
-CREATE DATABASE IF NOT EXISTS `loja_roupas` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `loja_roupas`;
+CREATE DATABASE IF NOT EXISTS `produtos` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `produtos`;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `calcinhas`
+-- Estrutura para tabela `produtos`
 --
 
-CREATE TABLE `calcinhas` (
+CREATE TABLE `produtos` (
   `id` int(11) NOT NULL,
-  `modelo` varchar(255) NOT NULL,
-  `descricao` text DEFAULT NULL,
+  `nome` varchar(255) NOT NULL,
+  `categoria` varchar(255) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
-  `imagem` varchar(255) DEFAULT NULL
+  `marca` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `calcinhas`
+-- Índices de tabela `produtos`
 --
-ALTER TABLE `calcinhas`
+ALTER TABLE `produtos`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `calcinhas`
+-- AUTO_INCREMENT de tabela `produtos`
 --
-ALTER TABLE `calcinhas`
+ALTER TABLE `produtos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
