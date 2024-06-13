@@ -28,10 +28,10 @@
           <a class="nav-link" aria-current="page" href="index.php">Página Inicial</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="admin/index.php"><i class="bi bi-lock-fill"></i> Área administrativa</a>
+          <a class="nav-link" href="#"><i class="bi bi-bag-fill"></i> Meus pedidos</a>
         </li>
       </ul>
-
+      
       <form autocomplete="off" class="d-flex" action="resultados.php" method="GET">
         <input name="busca" class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Pesquise aqui">
         <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">OK</button>
