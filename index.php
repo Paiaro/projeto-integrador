@@ -34,7 +34,7 @@ require_once "include/cabecalho.php";
 <!---------------- Imagens Principais -------------------->
 <div class="imgs">
   <figure>
-    <a href=""><img src="imagens/calcinhas.png" alt="Calcinhas"></a>
+    <a href="calcinhas.php"><img src="imagens/calcinhas.png" alt="Calcinhas"></a>
   </figure>
   <figure>
     <a href=""><img src="imagens/sutias.png" alt="Sutiãs"></a>
