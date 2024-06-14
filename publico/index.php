@@ -1,7 +1,7 @@
 <?php
-require_once "include/cabecalho.php";
+include_once "../include/cabecalho.php";
 ?>
-<link rel="stylesheet" href="css/estilo-index.css">
+<link rel="stylesheet" href="../css/estilo-index.css">
 <!-----------------------Carousel--------------------------- -->
 <div class="carousel-container">
   <div id="carouselExampleIndicators" class="carousel slide">
@@ -12,13 +12,13 @@ require_once "include/cabecalho.php";
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="imagens/promo.gif" class="d-block w-100" alt="Promoção">
+        <img src="../imagens/promo.gif" class="d-block w-100" alt="Promoção">
       </div>
       <div class="carousel-item">
-        <img src="imagens/promocao-animada1.gif" class="d-block w-100" alt="Promoção Animada 1">
+        <img src="../imagens/promocao-animada1.gif" class="d-block w-100" alt="Promoção Animada 1">
       </div>
       <div class="carousel-item">
-        <img src="imagens/promocao-animada2.gif" class="d-block w-100" alt="Promoção Animada 2">
+        <img src="../imagens/promocao-animada2.gif" class="d-block w-100" alt="Promoção Animada 2">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -34,19 +34,19 @@ require_once "include/cabecalho.php";
 <!---------------- Imagens Principais -------------------->
 <div class="imgs">
   <figure>
-    <a href="calcinhas.php"><img src="imagens/calcinhas.png" alt="Calcinhas"></a>
+    <a href="calcinhas.php"><img src="../imagens/calcinhas.png" alt="Calcinhas"></a>
   </figure>
   <figure>
-    <a href=""><img src="imagens/sutias.png" alt="Sutiãs"></a>
+    <a href=""><img src="../imagens/sutias.png" alt="Sutiãs"></a>
   </figure>
   <figure>
-    <a href=""><img src="imagens/conjunto.png" alt="Conjuntos"></a>
+    <a href=""><img src="../imagens/conjunto.png" alt="Conjuntos"></a>
   </figure>
   <figure>
-    <a href=""><img src="imagens/pijamas.png" alt="Pijamas"></a>
+    <a href=""><img src="../imagens/pijamas.png" alt="Pijamas"></a>
   </figure>
 </div>
 <!-- div -------------------------------final da container--------------------------- -->
 <?php
-require_once "include/rodape.php";
+require_once "../include/rodape.php";
 ?>

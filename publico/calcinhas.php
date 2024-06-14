@@ -1,5 +1,5 @@
 <?php
-require_once "include/cabecalho.php";
+require_once "../include/cabecalho.php";
 ?>
 <form method="GET" action="filtros.php">
     Categoria: 
