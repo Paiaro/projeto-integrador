@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Inserir Produto</title>
-</head>
-<body>
+<?php
+require_once '../include/cabecalho.php';
+?>
     <h1>Inserir Novo Produto</h1>
-    <form method="POST" action="../include/processa_insercao.php">
+    <?php
+    if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
+        echo "<p style='color: green;'>Produto inserido com sucesso!</p>";
+    }
+    ?>
+    <form method="POST" action="../include/processa_insercao.php" enctype="multipart/form-data">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br>
 
@@ -18,6 +19,9 @@
 
         <label for="marca">Marca:</label>
         <input type="text" id="marca" name="marca" required><br>
+
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required><br>
 
         <button type="submit">Inserir Produto</button>
     </form>
