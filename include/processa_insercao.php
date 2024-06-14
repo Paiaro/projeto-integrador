@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+require_once "../include/cabecalho.php";
 
 // Verifique se os dados foram enviados
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
