@@ -23,7 +23,7 @@ include_once "../include/cabecalho.php";
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../imagens/promo.gif" class="d-block w-100" alt="...">
+      <img src="../imagens/promocao.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
   
       </div>
