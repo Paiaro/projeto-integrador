@@ -28,16 +28,16 @@ include_once "../include/cabecalho.php";
 <!---------------- Imagens Principais -------------------->
 <div class="imgs">
   <figure class="card">
-    <div class="card-background" style="background-image: url('../imagens/calcinhas.png');"></div>
-    <a href="calcinhas.php" class="card-content"><img src="../imagens/calcinhas.png" alt="Calcinhas"></a>
+    <div class="card-background" style="background-image: url('../imagens/botao-calcinhas.png');"></div>
+    <a href="calcinhas.php" class="card-content"><img src="../imagens/botao-calcinhas.png" alt="Calcinhas"></a>
   </figure>
   <figure class="card">
-    <div class="card-background" style="background-image: url('../imagens/sutias.png');"></div>
-    <a href="" class="card-content"><img src="../imagens/sutias.png" alt="Sutiãs"></a>
+    <div class="card-background" style="background-image: url('../imagens/botao-sutias.png');"></div>
+    <a href="" class="card-content"><img src="../imagens/botao-sutias.png" alt="Sutiãs"></a>
   </figure>
   <figure class="card">
-    <div class="card-background" style="background-image: url('../imagens/conjunto.png');"></div>
-    <a href="" class="card-content"><img src="../imagens/conjunto.png" alt="Conjuntos"></a>
+    <div class="card-background" style="background-image: url('../imagens/botao-conjuntos.png');"></div>
+    <a href="" class="card-content"><img src="../imagens/botao-conjuntos.png" alt="Conjuntos"></a>
   </figure>
   <figure class="card">
     <div class="card-background" style="background-image: url('../imagens/pijamas.png');"></div>
