@@ -1,6 +1,6 @@
 <?php
 require_once "../include/cabecalho.php";
-require_once '../funcoes/funcoes-produtos.php'; // Certifique-se de que o caminho está correto
+require_once '../funcoes/funcoes-produtos.php';
 
 $categoria = isset($_GET['categoria']) ? $_GET['categoria'] : 'Calcinhas';
 $preco_min = isset($_GET['preco_min']) ? $_GET['preco_min'] : '';

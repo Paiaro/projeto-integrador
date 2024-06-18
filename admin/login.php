@@ -34,3 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 </body>
 </html>
+<?php
+require_once "../include/rodape.php";
+?>
