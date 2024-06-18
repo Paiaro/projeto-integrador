@@ -1,9 +1,14 @@
 body {
-    background-color: #f8f9fa; 
+    background-image: url('../imagens/login-fundo.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
 
 .card {
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
 }
 
 h1 {
@@ -24,3 +29,4 @@ h1 {
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
