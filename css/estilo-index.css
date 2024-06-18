@@ -8,33 +8,91 @@ body {
 
   /* Imagens principais */
   
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
-  /* Responsividade */
-  @media (min-width: 1200px) {
-    .carousel-container {
-      max-width: 80%;
-    }
+.card {
+  position: relative;
+  width: 200px;
+  height: 300px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-width: 700px; 
+  max-height: 700px; 
+  margin: auto; 
+}
+
+/* responsivos */
+@media (min-width: 768px) {
+  .imgs {
+      padding: 40px; 
   }
 
-  @media (max-width: 1199.98px) and (min-width: 992px) {
-    .carousel-container {
-      max-width: 90%;
-    }
+  .card {
+      width: 250px; 
+      height: 350px; 
   }
+}
 
-  @media (max-width: 991.98px) and (min-width: 768px) {
-    .carousel-container {
-      max-width: 100%;
-    }
+@media (min-width: 992px) {
+  .card {
+      width: 300px; 
+      height: 400px; 
+  }
+}
 
+@media (min-width: 1200px) {
+  .card {
+      width: 350px; 
+      height: 450px; 
+  }
+}
+
+
+@media (min-width: 768px) {
     .carousel-item img {
-      max-height: 900px;
+        max-height: 400px; 
     }
-  }
+}
 
-  @media (max-width: 767.98px) {
+@media (min-width: 992px) {
     .carousel-item img {
-      max-height: 600px;
+        max-height: 500px; 
     }
-  }
-
+}
