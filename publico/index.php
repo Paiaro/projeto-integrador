@@ -1,7 +1,8 @@
 <?php
 include_once "../include/cabecalho.php";
 ?>
- <link rel="stylesheet" href="../css/estilo-index.css">
+<link rel="stylesheet" href="../css/estilo-index.css">
+
 <!-----------------------Carousel--------------------------- -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -26,19 +27,24 @@ include_once "../include/cabecalho.php";
 </div>
 <!---------------- Imagens Principais -------------------->
 <div class="imgs">
-  <figure>
-    <a href="calcinhas.php"><img src="../imagens/calcinhas.png" alt="Calcinhas"></a>
+  <figure class="card">
+    <div class="card-background" style="background-image: url('../imagens/calcinhas.png');"></div>
+    <a href="calcinhas.php" class="card-content"><img src="../imagens/calcinhas.png" alt="Calcinhas"></a>
   </figure>
-  <figure>
-    <a href=""><img src="../imagens/sutias.png" alt="Sutiãs"></a>
+  <figure class="card">
+    <div class="card-background" style="background-image: url('../imagens/sutias.png');"></div>
+    <a href="" class="card-content"><img src="../imagens/sutias.png" alt="Sutiãs"></a>
   </figure>
-  <figure>
-    <a href=""><img src="../imagens/conjunto.png" alt="Conjuntos"></a>
+  <figure class="card">
+    <div class="card-background" style="background-image: url('../imagens/conjunto.png');"></div>
+    <a href="" class="card-content"><img src="../imagens/conjunto.png" alt="Conjuntos"></a>
   </figure>
-  <figure>
-    <a href=""><img src="../imagens/pijamas.png" alt="Pijamas"></a>
+  <figure class="card">
+    <div class="card-background" style="background-image: url('../imagens/pijamas.png');"></div>
+    <a href="" class="card-content"><img src="../imagens/pijamas.png" alt="Pijamas"></a>
   </figure>
 </div>
+
 <!-- div -------------------------------final da container--------------------------- -->
 <?php
 require_once "../include/rodape.php";
