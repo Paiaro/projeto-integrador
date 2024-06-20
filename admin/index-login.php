@@ -5,28 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 400px;
+            margin-top: 50px;
+        }
+        .message p {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h2>Login</h2>
+        <h2 class="text-center">Login</h2>
         <form action="login.php" method="post">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <button type="submit">Login</button>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" class="form-control" placeholder="Senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
         </form>
-        <div class="links">
-            <a href="../cadastro/registro.php">Cadastrar</a>
+        <div class="text-center mt-3">
+            <a href="../cadastro/registro.php">Ainda não tem uma conta? Cadastrar-se aqui.</a>
         </div>
-        <div class="message">
+        <div class="message text-center mt-3">
             <?php
                 if (isset($_GET['error'])) {
-                    echo "<p style='color:red;'>".$_GET['error']."</p>";
+                    echo "<p class='text-danger'>".$_GET['error']."</p>";
                 }
                 if (isset($_GET['message'])) {
-                    echo "<p style='color:green;'>".$_GET['message']."</p>";
+                    echo "<p class='text-success'>".$_GET['message']."</p>";
                 }
             ?>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
