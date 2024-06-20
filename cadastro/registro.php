@@ -6,15 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .container {
-            max-width: 500px;
-            margin-top: 50px;
-        }
-        .message p {
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
