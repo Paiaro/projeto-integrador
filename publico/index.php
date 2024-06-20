@@ -2,7 +2,8 @@
 include_once "../include/cabecalho.php";
 ?>
 <link rel="stylesheet" href="../css/estilo-index.css">
-
+<main class="flex-shrink-0">
+<div class="container">
 <!-----------------------Carousel--------------------------- -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
